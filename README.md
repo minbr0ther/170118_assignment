@@ -2,8 +2,38 @@
 
 ## 2017. 1. 18 과제
 
-```gist
-https://gist.github.com/minbr0ther/803328d411aab6f856914f8108b14253
+```html
+<!DOCTYPE html>
+<html>
+<head>
+	<title>중첩이벤트 </title>
+	<style type="text/css">
+		div {
+			border: 1px solid black;
+			margin: 10px;
+			padding: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div id="one">
+		첫번째
+		<div id="two">
+			두번째
+			<div id="three">
+				세번째
+				<div id="four">
+					네번째
+					<div id="five">
+						다섯번째
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="./duplicateEvents.js"></script>
+</body>
+</html>
 ```
 
 ```javascript
