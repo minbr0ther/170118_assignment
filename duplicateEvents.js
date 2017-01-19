@@ -18,6 +18,7 @@ document.getElementById("two").addEventListener("click", function(){
 
 document.getElementById("three").addEventListener("click", function(){
 	console.log("three")
+	event.stopPropagation(); //전파를 막는다
 });
 
 document.getElementById("four").addEventListener("click", function(){
